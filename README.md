@@ -1,6 +1,8 @@
 # react-native-pdf-helpers
 
-set
+A set of helpers to work with pdfs:
+- generateThumbnail: generates a thumbnail from a given uri
+- getPageCount: get the number of pages for a given uri
 
 ## Installation
 
@@ -11,16 +13,12 @@ npm install react-native-pdf-helpers
 ## Usage
 
 ```js
-import { multiply } from 'react-native-pdf-helpers';
+import { generateThumbnail, getPageCount } from 'react-native-pdf-helpers';
 
-// ...
+const thumbnail = await generateThumbnail(uri, 0, 100); // Generates a thumbnail from a given URI, for the first page of the document and at the highest quality.
 
-const result = await multiply(3, 7);
+const pageCount = await getPageCount(uri);
 ```
-
-## Contributing
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
 
 ## License
 
