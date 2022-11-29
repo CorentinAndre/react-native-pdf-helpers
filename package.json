@@ -1,6 +1,6 @@
 {
   "name": "react-native-pdf-helpers",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "A set of helpers to work with pdfs on iOS & Android",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
