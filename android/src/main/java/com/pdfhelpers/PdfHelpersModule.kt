@@ -23,7 +23,7 @@ class PdfHelpersModule(reactContext: ReactApplicationContext) : ReactContextBase
   }
 
   @ReactMethod
-  fun getPageCount(filePath: string) {
+  fun getPageCount(filePath: String, promise: Promise) {
     var parcelFileDescriptor: ParcelFileDescriptor? = null
     var pdfRenderer: PdfRenderer? = null
     try {
