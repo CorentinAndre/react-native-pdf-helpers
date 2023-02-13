@@ -45,7 +45,7 @@ class PdfHelpersModule(reactContext: ReactApplicationContext) : ReactContextBase
   }
 
   @ReactMethod
-  fun generate(filePath: String, page: Int, quality: Int, promise: Promise) {
+  fun generateThumbnail(filePath: String, page: Int, quality: Int, promise: Promise) {
     var parcelFileDescriptor: ParcelFileDescriptor? = null
     var pdfRenderer: PdfRenderer? = null
     try {
