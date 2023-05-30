@@ -1,0 +1,9 @@
+{
+  "platforms": ["ios", "android", "web"],
+  "ios": {
+    "modules": ["ReactNativePdfHelpersModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.pdfhelpers.ReactNativePdfHelpersModule"]
+  }
+}
